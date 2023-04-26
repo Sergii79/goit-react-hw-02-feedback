@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import { StatisticText } from "./FeedbackStatistics.styled";
 
 export const FeedbackStatistics = ({
   good,
@@ -9,11 +10,11 @@ export const FeedbackStatistics = ({
 }) => {
   return (
     <>
-      <span>Good: {good}</span>
-      <span>Neutral: {neutral}</span>
-      <span>Bad: {bad}</span>
-      {/* <span>Total: {total}</span>
-      <span>Positive feedback: {positivePercentage}%</span> */}
+      <StatisticText>Good: {good}</StatisticText>
+      <StatisticText>Neutral: {neutral}</StatisticText>
+      <StatisticText>Bad: {bad}</StatisticText>
+      <StatisticText>Total: {total}</StatisticText>
+      <StatisticText>Positive feedback: {positivePercentage}%</StatisticText>
     </>
   );
 };
@@ -22,6 +23,6 @@ FeedbackStatistics.propTypes = {
   good: PropTypes.number.isRequired,
   neutral: PropTypes.number.isRequired,
   bad: PropTypes.number.isRequired,
-//   total: PropTypes.number.isRequired,
-//   positivePercentage: PropTypes.number.isRequired,
+  total: PropTypes.number.isRequired,
+  positivePercentage: PropTypes.number.isRequired,
 };
