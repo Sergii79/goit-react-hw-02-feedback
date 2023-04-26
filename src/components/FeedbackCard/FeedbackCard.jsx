@@ -4,14 +4,12 @@ import { FeedbackStatistics } from "../FeedbackStatistics/FeedbackStatistics";
 import { Container, Title } from "./FeedbackCard.styled";
 
 
-
-
 export class FeedbackCard extends Component {
     state = {
         good: 0,
         neutral: 0,
         bad: 0
-    }
+    };
 
     onChangeFeedback = e => {
         this.setState(prevState => ({
@@ -56,4 +54,4 @@ export class FeedbackCard extends Component {
             </Container>
         )
     }
-}
+};
