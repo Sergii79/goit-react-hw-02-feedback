@@ -1,3 +1,7 @@
+import { FeedbackCard } from "./FeedbackCard/FeedbackCard";
+import { GlobalStyle } from "./GlobalStyle";
+
+
 export const App = () => {
   return (
     <div
@@ -6,11 +10,13 @@ export const App = () => {
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
-        fontSize: 40,
+        fontSize: 25,
         color: '#010101'
       }}
-    >
-      React homework template
+    >    
+        
+      <FeedbackCard />
+      <GlobalStyle />
     </div>
   );
 };
