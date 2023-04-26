@@ -1,5 +1,4 @@
 import { Component } from 'react';
-import { render } from 'react-dom';
 import { FeedbackButton } from "../FeedbackButton/FeedbackButton";
 import { FeedbackStatistics } from "../FeedbackStatistics/FeedbackStatistics";
 
